@@ -2,6 +2,7 @@ package com.example.quizetwo_2
 
 import retrofit2.Call
 import retrofit2.http.*
+import searchimage.SearchImage
 
 interface GitHubService {
 
@@ -24,6 +25,6 @@ interface GitHubService {
         @Query("extras") extras: String,
         @Query("format") format: String,
         @Query("nojsoncallback") nojsoncallback: String,
-    ): Call<FlickrResult>
+    ): Call<SearchImage>
 
 }
